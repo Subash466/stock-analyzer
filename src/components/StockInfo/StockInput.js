@@ -27,15 +27,15 @@ const StockInput = ({ getInput }) => {
   //function to check user input 
  const check=()=>{
     if(userStock<=0 || isNaN(userStock)){
-      userStockError.textContent="Enter Correct user stock value";
+      userStockError.textContent="Enter valid stock value";
       document.getElementById("stockPrise").value="";
       document.getElementById("stockPrise").focus();
   }else if(stockQuantity<=0 || isNaN(stockQuantity)){
-      quantityError.textContent="Enter Correct Stock Quantity";
+      quantityError.textContent="Enter valid stock quantity";
       document.getElementById("quantity").value="";
       document.getElementById("quantity").focus();
   }else{
-      currentStockError.textContent="Enter Correct Current stock value";
+      currentStockError.textContent="Enter correct stock value";
       document.getElementById("tdyPrice").value="";
       document.getElementById("tdyPrice").focus();
   }
